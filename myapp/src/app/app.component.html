@@ -1,0 +1,81 @@
+
+
+
+  <!-- <h1>My first  angular app</h1> -->
+<!-- <p>Pragathi</p>
+<li>Lily</li>
+<li>Ariana</li>
+<li>Nia</li>
+
+<app-products></app-products>
+<warning-alert></warning-alert>
+<success-alert></success-alert> -->
+
+<!-- <app-server></app-server> -->
+<!-- <app-product></app-product> -->
+<!-- <app-names></app-names> -->
+
+<!-- <app-accounts></app-accounts> -->
+
+<div class="container mt-2">
+  <div class="row">
+    <div class="col">
+      <ul class="nav nav-tabs">
+        <li role="presentation"
+            class="nav-item"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">
+            <a class="nav-link" routerLink="/">Home</a>
+        </li>
+
+        <li role="presentation" 
+            class="nav-item"
+            routerLinkActive="active">
+            <a class="nav-link" routerLink="server">Server</a>
+        </li>
+
+        <li role="presentation" 
+            class="nav-item"
+            routerLinkActive="active">
+            <a class="nav-link" routerLink="product">Products</a>
+        </li>
+
+        <li role="presentation" 
+            class="nav-item"
+            routerLinkActive="active">
+            <a class="nav-link" routerLink="observable">Observable</a>
+        </li>
+
+        <li role="presentation" 
+            class="nav-item"
+            routerLinkActive="active">
+            <a class="nav-link" routerLink="tforms">Tforms</a>
+        </li>
+
+        <li role="presentation" 
+            class="nav-item"
+            routerLinkActive="active">
+            <a class="nav-link" routerLink="rforms">Rforms</a>
+        </li>
+
+        <li role="presentation" 
+            class="nav-item"
+            routerLinkActive="active">
+            <a class="nav-link" routerLink="pipes">Pipes</a>
+        </li>
+
+        <li role="presentation" 
+            class="nav-item"
+            routerLinkActive="active">
+            <a class="nav-link" routerLink="blogs">BlogPosts</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

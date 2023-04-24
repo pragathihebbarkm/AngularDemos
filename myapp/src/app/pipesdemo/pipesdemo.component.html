@@ -1,0 +1,17 @@
+<div class="container m-5">
+    <div class="row">
+        <div class="col">
+            <input type="text" [(ngModel)]="filteredStatus" />
+            <ul class="list-group m2">
+                <li class="list-group-item"
+                    *ngFor="let server of servers | filter : filteredStatus : 'status'"
+                    [ngClass]="getStatusClass(server)">
+                    <strong>{{server.name | shorten : 0 : 7}}</strong> |
+                    {{server.serverSize | uppercase}}
+                    {{server.started | date:"fullDate" | uppercase}}
+                    <span class="badge badge-warning">{{server.status}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

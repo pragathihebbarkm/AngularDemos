@@ -1,0 +1,25 @@
+<!-- <h3>List of enrolled students</h3>
+
+<p *ngFor="let name of names; let i = index">{{i+1}} {{name}}</p> -->
+<h4>Click actions</h4>
+    <button class="btn btn-info" (click)="onShowButtonClick()">
+     showSecret
+    </button>
+
+    <button class="btn btn-sm btn-danger" (click)="onResetLogs()">
+        resetLog
+       </button>
+
+    <label style="padding:10px;"
+     *ngIf="showSecret"
+     appBetterHighlight [defaultColor]="'yellow'"
+     [highlightColor]="'tomato'">Big Secret</label>
+
+   
+
+       <p *ngFor="let log of logs; let i =index"
+       [ngStyle]="{backgroundColor:i > 4 ? 'dodgerblue':'white'}"
+       [ngClass]="{'white-text': i > 4}">
+                {{log}}
+        </p>
+   
